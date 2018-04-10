@@ -26,7 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var bango1 = 5;
+var bango2 = 7;
 
 
 /*
@@ -43,7 +44,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
-
+function add(num1, num2){
+    return num1 + num2;
+}
+var sum = add(bango1, bango2)
+console.log(sum)
 
 
 /*
@@ -60,8 +65,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
-
-
+function subtract(num1, num2){
+    return num1 - num2;
+}
+var difference = subtract(bango1, bango2)
+console.log(difference)
 /*
  * #4
  * Function - multiply
@@ -76,8 +84,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
-
-
+function multiply(num1, num2){
+    return num1 * num2;
+}
+var product = multiply(bango1, bango2)
+console.log(product)
 /*
  * #5
  * Function - divide
@@ -92,8 +103,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
-
-
+function divide(num1, num2){
+    return num1 / num2;
+}
+var quotient = divide(bango1, bango2)
+console.log(quotient)
 /*
  * #6
  * Function - checkSum
@@ -106,8 +120,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
-
-
+function checkSum(x){
+    return "Mariah Carey has been married " + x + " amount of times.";
+}
+var daDiva = checkSum(5)
+console.log(daDiva)
 /*
  * #7
  * Function - checkDifference
@@ -120,7 +137,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your results.
 */ 
 
-
+function checkDifference(x){
+    return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
+}
+var difference = checkDifference(3)
+console.log(difference)
 
 /*
  * #8
@@ -133,39 +154,62 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
-
-
+function checkProduct(){
+    return sum * product;
+}
+var answer = checkProduct()
+console.log(answer)
 /*
- * #9
+ *  #9
  * Function - checkQuotient
  * Create a function named `checkQuotient` which does not require any parameters.
  *
  *    @return Datatype: Number
  *
- * This function will multiply the values stored in the product and quotient variables.
+ * This function will multiply the values stored in the product and quotient.
  * Console.log your result.  
 */
 
-/*
- * Declare three variables
- *   @variable Datatype: Number `bango3`
- *   @variable Datatype: Number `bango4`
- *   @variable Datatype: Number `bango5`
- 
- * #10
- * Function - addThenSubtract
- *   
- * Next, create a function named addThenSubtract which takes three parameters: `num1`, `num2`, `num3`.
- *
- *    @param Datatype: Number `num1`
- *    @param Datatype: Number `num2`
- *    @param Datatype: Number `num3`
- *    @return Datatype: Number
- *
- * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
- * Console.log your result.
-*/ 
+function checkQuotient(){
+    return product * quotient;
+  }
+  console.log("checkQuotient: " , checkQuotient());
 
+  function checkQuotient(){
+    return product * quotient;
+}
+console.log(checkQuotient())
+  
+  /*
+   * #10
+   * Function - addThenSubtract
+   * Declare three variables
+   *
+   *   @variable Datatype: Number `bango3`
+   *   @variable Datatype: Number `bango4`
+   *   @variable Datatype: Number `bango5`
+   *   
+   * Next, create a function named addThenSubtract which takes three parameters: `num1`, `num2`, `num3`.
+   *
+   *    @param Datatype: Number `num1`
+   *    @param Datatype: Number `num2`
+   *    @param Datatype: Number `num3`
+   *    @return Datatype: Number
+   *
+   * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
+   * Console.log your result.
+  */ 
+  
+var bango3 = 7;
+var bango4 = 20;
+var bango5 = 30;
+ 
+
+function addThenSubtract(num1, num2, num3){
+var sum = add (num1, num2);
+return subtract (sum, num3);
+}
+console.log(addThenSubtract(bango3, bango4, bango5));
 
 
 /*
@@ -181,8 +225,14 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+function multiplyThenDivide(num1, num2, num3){
+    var product = multiply (num1, num2);
 
+    return divide (product, num3);
+  
 
+}
+console.log(multiplyThenDivide(bango3, bango4, bango4)); 
 
 /*
  * #12
