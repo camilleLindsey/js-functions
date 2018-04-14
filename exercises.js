@@ -256,6 +256,12 @@ function createFullName(firstName, lastName){
 }
      console.log(myFullName);
 
+var firstName= 'camille';
+var lastName= 'lindsey';
+var createFullName = firstName + " " + lastName;
+console.log(createFullName);
+
+
 /*
  * #13 
  * Function - eatFood
