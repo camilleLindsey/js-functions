@@ -229,8 +229,6 @@ function multiplyThenDivide(num1, num2, num3){
     var product = multiply (num1, num2);
 
     return divide (product, num3);
-  
-
 }
 console.log(multiplyThenDivide(bango3, bango4, bango4)); 
 
@@ -246,7 +244,17 @@ console.log(multiplyThenDivide(bango3, bango4, bango4));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+var myFullName = {
+    firstName: 'camille',
+    lastName: 'lindsey',
 
+};
+ 
+function createFullName(firstName, lastName){
+    this.firstName=firstName;
+    this.lastName=lastName;
+}
+     console.log(myFullName);
 
 /*
  * #13 
