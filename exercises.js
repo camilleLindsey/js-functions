@@ -45,10 +45,12 @@ var bango2 = 7;
  * Console.log `sum` to test your code.
 */
 function add(num1, num2){
-    return num1 + num2;
+return num1 + num2;
 }
-var sum = add(bango1, bango2)
+
+var sum = add(bango1, bango2);
 console.log(sum)
+
 
 
 /*
@@ -67,9 +69,11 @@ console.log(sum)
 
 function subtract(num1, num2){
     return num1 - num2;
+
 }
-var difference = subtract(bango1, bango2)
-console.log(difference)
+var difference = subtract(bango1, bango2);
+console.log(difference);
+
 /*
  * #4
  * Function - multiply
@@ -83,12 +87,12 @@ console.log(difference)
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
-
 function multiply(num1, num2){
-    return num1 * num2;
+return num1 * num2;
 }
-var product = multiply(bango1, bango2)
-console.log(product)
+
+var product = multiply(bango1, bango2);
+console.log(product);
 /*
  * #5
  * Function - divide
@@ -103,11 +107,16 @@ console.log(product)
  * Console.log `quotient` to test your code.
 */
 
+
 function divide(num1, num2){
-    return num1 / num2;
+return num1/num2;
 }
-var quotient = divide(bango1, bango2)
-console.log(quotient)
+var quotient = divide(bango1, bango2);
+//var quotient = divide(bango1, bango2);
+console.log(quotient);
+
+
+
 /*
  * #6
  * Function - checkSum
@@ -120,11 +129,12 @@ console.log(quotient)
  * Console.log your result.
 */
 
-function checkSum(x){
-    return "Mariah Carey has been married " + x + " amount of times.";
+function checkSum( x ){
+return "mariah carey has been married" + x + "amount of times";
 }
-var daDiva = checkSum(5)
-console.log(daDiva)
+var daDiva = checkSum(bango1);
+console.log(daDiva);
+
 /*
  * #7
  * Function - checkDifference
@@ -136,13 +146,12 @@ console.log(daDiva)
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-
 function checkDifference(x){
-    return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
-}
-var difference = checkDifference(3)
-console.log(difference)
+    return " last night i dreamt that i ate " + x + " taco bell soft tacos ";
 
+}
+var difference = checkDifference(bango1);
+console.log(difference);
 /*
  * #8
  * Function - checkProduct
@@ -155,10 +164,12 @@ console.log(difference)
 */
 
 function checkProduct(){
-    return sum * product;
+return sum * product;
+
 }
-var answer = checkProduct()
-console.log(answer)
+var answer = checkProduct(sum, product);
+console.log(answer);
+
 /*
  *  #9
  * Function - checkQuotient
@@ -169,16 +180,11 @@ console.log(answer)
  * This function will multiply the values stored in the product and quotient.
  * Console.log your result.  
 */
-
 function checkQuotient(){
     return product * quotient;
-  }
-  console.log("checkQuotient: " , checkQuotient());
-
-  function checkQuotient(){
-    return product * quotient;
 }
-console.log(checkQuotient())
+var check = checkQuotient();
+console.log(check);
   
   /*
    * #10
@@ -199,18 +205,19 @@ console.log(checkQuotient())
    * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
    * Console.log your result.
   */ 
-  
-var bango3 = 7;
-var bango4 = 20;
-var bango5 = 30;
- 
+ //                     **************************************           //
+  var bango3 = 5;
+  var bango4 = 7;
+  var bango5 = 11;
+
+
 
 function addThenSubtract(num1, num2, num3){
-var sum = add (num1, num2);
-return subtract (sum, num3);
+    var sum = add (num1, num2);
+    return subtract (sum, num3);
 }
-console.log(addThenSubtract(bango3, bango4, bango5));
 
+console.log(addThenSubtract(bango3, bango4, bango5));
 
 /*
  * #11
@@ -225,12 +232,13 @@ console.log(addThenSubtract(bango3, bango4, bango5));
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-function multiplyThenDivide(num1, num2, num3){
-    var product = multiply (num1, num2);
 
-    return divide (product, num3);
+function multiplyThenDivide(num1, num2, num3){
+    var product = multiply(num1, num2);
+    return divide (product / num3);
 }
-console.log(multiplyThenDivide(bango3, bango4, bango4)); 
+console.log(multiplyThenDivide(bango3, bango4, bango5));
+
 
 /*
  * #12
@@ -248,7 +256,7 @@ var myFullName = {
     firstName: 'camille',
     lastName: 'lindsey',
 
-};
+}
  
 function createFullName(firstName, lastName){
     this.firstName=firstName;
@@ -275,8 +283,14 @@ console.log(createFullName);
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
+function eatFood (firstName, lastName, food){
+  
+    return firstName + lastName + "eats" + food + "everyday for breakfast"; 
 
-
+}
+var food= " bananas ";
+var eatFood = createFullName + " eats" + food + "everyday for breakfast.";
+console.log(eatFood);
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -291,8 +305,13 @@ console.log(createFullName);
  * Console.log your result. 
 */
 
-
-
+function shoeSize (inches){
+    var centimeters = inches * 2.54;
+    return centimeters;
+}
+var inches = 5;
+console.log(shoeSize( inches));
+console.log(shoeSize(8));
 /*
  * #15
  * Function allCaps
@@ -303,7 +322,13 @@ console.log(createFullName);
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+var str = "believe you can and you're halfway there.";
+var res = str.toUpperCase();
+console.log(res);
 
+var str = 'BELIEVE';
+var res = str.toLowerCase();
+console.log(res);
 
 /*
  * #16
@@ -333,9 +358,3 @@ console.log(createFullName);
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
-
-
-
-
-
